@@ -5,7 +5,9 @@
 ## Result
 |DataSet                   | mAP | 
 |:----:                    | :----: |
-|MS-COCO                   |  89.49 | 
-|VOC 2007                  |  95.46 | 
-|VOC 2007 pretrain on COCO |  96.48 |   
-|NUS-WIDE                  |  67.80 | 
+|MS-COCO                   |  89.49 |
+|VOC 2007                  |  95.46 |
+|VOC 2007 pretrain on COCO |  96.48 |
+|NUS-WIDE                  |  67.80 |
+|VG500                     |  39.60 |
+|CUB200                    |  37.35 |  
