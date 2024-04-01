@@ -8,4 +8,4 @@
 |MS-COCO                   |  89.49 | 
 |VOC 2007                  |  95.46 | 
 |VOC 2007 pretrain on COCO |  96.48 |   
-|NUS-WIDE                  |  -     | 
+|NUS-WIDE                  |  67.80 | 
