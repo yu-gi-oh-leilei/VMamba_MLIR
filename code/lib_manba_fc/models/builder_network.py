@@ -19,10 +19,10 @@ from utils.util import cal_gpu
 from .imagenet_templates import IMAGENET_TEMPLATES, IMAGENET_TEMPLATES_SELECT
 
 from .mlp import SimpleMLP
-from .manba import build_model
+from .mamba import build_model
 
 
-class VmanbaMLIC(nn.Module):
+class VmambaMLIC(nn.Module):
     def __init__(self, cfg, classnames, pretrain_model, return_interm_layers=False):    
         super().__init__()
 
@@ -141,7 +141,7 @@ def build_NetWork(cfg):
     #     print(k)
     vmanba_model.load_state_dict(checkpoint['model'], strict=True)
 
-    model = VmanbaMLIC(cfg, classnames, pretrain_model=vmanba_model, return_interm_layers=False)
+    model = VmambaMLIC(cfg, classnames, pretrain_model=vmanba_model, return_interm_layers=False)
     print("Turning off gradients in both the image and the text encoder")
 
     # model.eval()
